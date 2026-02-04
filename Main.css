@@ -1,0 +1,52 @@
+
+
+body {
+    background-image: url("https://wallpapers.com/images/featured/computer-science-cmoeeb2alwqi3awp.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* This section is for the homepage */
+.home_page {
+    background-color: rgba(0,0,0,0.5);
+    padding: 0px;  
+    text-align: center;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size:200px;
+}
+
+.author_details {
+    background-color: rgba(0,0,0,0.5);
+    padding: 0px;  
+    text-align: center;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size:20px;
+}
+
+/*This section is for the navigation pane*/
+
+.nav_bar {
+    display: flex;
+    flex-direction:row;
+    color: white;
+    background-color: black;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+.flex-item a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.flex-item a:hover {
+    background-color: #0576c3;
+}
+
+/*======================================*/
