@@ -1,46 +1,128 @@
-.flex-container {
-    display: flex;
-    border-style: solid;
-    border-width: 5px;
-    border-color: red;
-    flex-direction: row;
-}
-.flex-container2 {
-    display: flex;
-    border-style: solid;
-    border-width: 5px;
-    border-color: rgb(0, 255, 51);
-    flex-direction: row;
-}
-
+/* Reset body spacing */
 body {
     background-image: url("https://wallpapers.com/images/featured/computer-science-cmoeeb2alwqi3awp.jpg");
-    
-
+    margin: 0;
+    font-family: sans-serif;
 }
 
-/*This section is for the navigation pane*/
+/* Center all sections */
+section, header, footer {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+}
 
+/* NAVBAR */
 .nav_bar {
     display: flex;
-    flex-direction:row;
-    color: white;
     background-color: black;
-    justify-content: center;
     position: sticky;
     top: 0;
     width: 100%;
-    box-sizing: border-box;
+    z-index: 1000;
 }
+
+.flex-item {
+    flex: 1;
+}
+
 .flex-item a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px;
     text-decoration: none;
 }
+
 .flex-item a:hover {
     background-color: #0576c3;
 }
 
-/*======================================*/
+/* FEATURED PHOTO */
+.featured {
+    text-align: center;
+}
+
+.featured-box {
+    height: 950px;
+    border: 0px solid black;
+    background-image: url("Sir\ Arvin\ Picture.jpg");
+    background-size: cover;
+}
+
+/* PROJECTS ROW */
+.projects {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.proj1 {
+    flex: 1;
+    height: 200px;
+    background-image: url("CMSC\ 22\ Project.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items:center;
+}
+.proj2 {
+    flex: 1;
+    height: 200px;
+    background-image: url("CMSC22Proj2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items:center;
+}
+.proj3 {
+    flex: 1;
+    height: 200px;
+    background-image: url("CMSC22Proj4.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items:center;
+}
+.proj4 {
+    flex: 1;
+    height: 200px;
+    background-image: url("CMSC22Proj3.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items:center;
+}
+
+/* TWO COLUMN SECTION */
+.two-col {
+    display: flex;
+    gap: 20px;
+}
+
+.two-col > div {
+    flex: 1;
+}
+
+.wide-box {
+    height: 150px;
+    border: 3px solid black;
+    padding: 15px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    color: white;
+    background-color: rgb(1, 51, 122);
+}
+
+/* FOOTER */
+.footer {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-top: 2px solid black;
+}
+
+.footer-logo {
+    width: 60px;
+    height: 60px;
+    border: 5px solid black;
+    background-image: url(profpic.jpg);
+    background-size: contain;
+}
